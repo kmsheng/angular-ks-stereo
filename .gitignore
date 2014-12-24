@@ -1,0 +1,8 @@
+*.*.swo
+*.*.swp
+.DS_Store
+.sass-cache
+.tmp
+client/bower_components
+heroku
+node_modules

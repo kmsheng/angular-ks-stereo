@@ -1,0 +1,31 @@
+{
+  "name": "angular-ks-stereo",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kmsheng/angular-ks-stereo",
+  "authors": [
+    "kmsheng <kmsh3ng@gmail.com>"
+  ],
+  "description": "AngularJS Audio Visualization",
+  "main": "dist/angular-ks-stereo.js",
+  "keywords": [
+    "angular-ks-stereo",
+    "audio visualization"
+  ],
+  "ignore": [
+    "demo",
+    "src",
+    "index.html",
+    "scripts",
+    "test",
+    "gulp",
+    "gulpfile.js",
+    "lib"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "angular-mocks": "~1.2.22"
+  },
+  "dependencies": {
+    "angular": "~1.2.23"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ksStereo</title>
+  <link rel="stylesheet" href="demo/demo.css" />
+</head>
+<body data-ng-app="demoApp">
+
+  <h1>ksStereo</h1>
+
+  <div data-ks-stereo></div>
+
+  <script type="text/ng-template" id="/app/components/ks-music-control.html">
+    <button data-ng-click="toggle()" class="ks-music-control">
+
+      <div data-ng-switch="getStatus()">
+        <div data-ng-switch-when="loading">
+          <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div data-ng-switch-when="paused">
+          <svg width="22" height="22">
+            <polygon points="0, 0 22, 11 0, 22"></polygon>
+          </svg>
+        </div>
+        <div data-ng-switch-when="playing">
+          <div class="pause">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div data-ng-switch-when="error">
+          <div class="error">Error</div>
+        </div>
+      </div>
+
+    </button>
+  </script>
+
+  <script type="text/ng-template" id="/app/components/ks-stereo.html">
+    <div class="ks-stereo">
+      <div data-ks-icosahedron data-scale="vm.stereo.scale" data-color="vm.stereo.color"></div>
+      <div data-ks-vinyl data-scale="vm.stereo.scale" data-color="vm.stereo.color" data-progress="vm.stereo.progress"></div>
+      <div class="ks-control-icosahedron" data-ks-music-control></div>
+    </div>
+  </script>
+
+  <script src="lib/Modernizr/modernizr.custom.39580.js"></script>
+  <script src="lib/three/three.js"></script>
+  <script src="lib/three/CanvasRenderer.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/angular/angular.js"></script>
+
+  <script src="dist/angular-ks-stereo.js"></script>
+  <script src="demo/demo.js"></script>
+</body>
+</html>
