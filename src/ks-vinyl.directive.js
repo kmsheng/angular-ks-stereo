@@ -16,10 +16,6 @@
       // jshint maxstatements: 50
       link: function(scope, element) {
 
-        var IMAGE_PATH = ksAudio.defaults.imagePath;
-        var OPENHAND_CURSOR_PATH = IMAGE_PATH + '/openhand.cur';
-        var CLOSEHAND_CURSOR_PATH = IMAGE_PATH + '/closehand.cur';
-
         var parent = element.parent();
         var canvasElem = element.find('canvas');
         var canvas = canvasElem[0];
@@ -137,15 +133,15 @@
 
         var cursor = {
           mousedown: false,
-          getValue: function() {
+          getCssClass: function() {
             var center = belt.center;
             if (cursor.inCircle(center.x, center.y, belt.radius)) {
               if (cursor.mousedown) {
-                return 'url(' + CLOSEHAND_CURSOR_PATH + '), pointer';
+                return 'cursor-closehand';
               }
-              return 'url(' + OPENHAND_CURSOR_PATH + '), pointer';
+              return 'cursor-openhand';
             }
-            return 'default';
+            return 'cursor-default';
           },
           x: null,
           y: null,
@@ -160,7 +156,7 @@
         };
 
         function setCursorImage() {
-          canvasElem.css('cursor', cursor.getValue());
+          canvas.className = cursor.getCssClass();
         }
 
         function getCentralAngle(canvas, cursor) {
@@ -202,7 +198,7 @@
           }
 
           cursor.mousedown = true;
-          canvasElem.css('cursor', 'url(' + CLOSEHAND_CURSOR_PATH + '), pointer');
+          setCursorImage();
 
           (function animate() {
             if (cursor.mousedown) {
