@@ -12,7 +12,7 @@
   <div data-ks-stereo></div>
 
   <script type="text/ng-template" id="/app/components/ks-music-control.html">
-    <button data-ng-click="toggle()" ng-disabled="'loading' === getStatus() || 'error' === getStatus()" class="ks-music-control">
+    <button data-ng-click="toggle()" data-ng-disabled="'loading' === getStatus() || 'error' === getStatus()" class="ks-music-control">
 
       <div data-ng-switch="getStatus()">
         <div data-ng-switch-when="loading">
