@@ -5,7 +5,7 @@ AngularJS Audio Visualization
 <img src="https://raw.githubusercontent.com/kmsheng/angular-ks-stereo/master/images/audio-player.png?v=1" alt="">
 
 # Demo
-<a href="http://kmsheng.github.io/angular-ks-stereo" target="_blank">http://kmsheng.github.io/ks-stereo</a>
+<a href="http://kmsheng.github.io/angular-ks-stereo" target="_blank">http://kmsheng.github.io/angular-ks-stereo</a>
 
 
 ## Requirements
