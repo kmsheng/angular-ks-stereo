@@ -24,7 +24,7 @@ AngularJS Audio Visualization
 
 ## Quick Configuration
 ```sh
-bower install ks-stereo
+bower install angular-ks-stereo
 ```
 
 This will copy the ks-stereo files into a `bower_components` folder, along with its dependencies. Load the script files in your application:
