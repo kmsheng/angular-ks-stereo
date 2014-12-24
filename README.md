@@ -13,7 +13,7 @@ AngularJS Audio Visualization
 - jQuery
 - AngularJS
 - three.js
-- Modernir ( optional )
+- Modernizr ( optional )
 
 
 ## Browser Support
