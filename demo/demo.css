@@ -57,6 +57,7 @@ body {
     transform: translateY(0px); } }
 
 .ks-music-control {
+  cursor: pointer;
   outline: 0;
   width: 100px;
   height: 100px;
