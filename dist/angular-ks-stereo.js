@@ -1076,7 +1076,12 @@
         };
 
         function setCursorImage() {
-          canvas.className = cursor.getCssClass();
+
+          var className = cursor.getCssClass();
+
+          if (className !== canvas.className) {
+            canvas.className = className;
+          }
         }
 
         function getCentralAngle(canvas, cursor) {
