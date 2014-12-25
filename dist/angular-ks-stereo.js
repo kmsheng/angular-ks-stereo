@@ -80,7 +80,6 @@
       autoplay: false,
       enableAudio: true,
       enableAudioContext: true,
-      imagePath: '/assets/images',
       colors: colors
     };
 
