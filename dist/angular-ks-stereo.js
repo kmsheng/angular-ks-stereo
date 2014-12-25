@@ -90,7 +90,7 @@
       ksAudio.defaults = defaults;
 
       if (! defaults.enableAudio) {
-        return;
+        return ksAudio;
       }
 
       ksAudio.audio = new Audio();
