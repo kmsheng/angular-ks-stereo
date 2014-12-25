@@ -1,6 +1,6 @@
 {
-  "name": "ks-stereo",
-  "version": "0.0.2",
+  "name": "angular-ks-stereo",
+  "version": "0.1.0",
   "description": "Angular Audio Visualization",
   "main": "gulpfile.js",
   "dependencies": {
