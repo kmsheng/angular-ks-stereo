@@ -52,8 +52,7 @@ angular.module('demoApp')
     // whether to enable AudioConext
     ksAudioProvider.defaults.enableAudioContext = (! Modernizr.touch) && Modernizr.webaudio;
 
-    // set the image path for cursor image files
-    ksAudioProvider.defaults.imagePath = 'demo';
+    ksAudioProvider.defaults.autoplay = true;
 
     // set the colors of vinyl
     ksAudioProvider.defaults.colors = [
