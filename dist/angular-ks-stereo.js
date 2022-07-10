@@ -107,7 +107,8 @@
       ksAudio.progress = 0;
 
       ksAudio.play = function() {
-        return ksAudio.audio.play();
+        return ksAudio.context.resume()
+          .then(() => ksAudio.audio.play());
       };
 
       ksAudio.playByPercent = function(percent) {
